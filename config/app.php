@@ -12,6 +12,13 @@ return [
     | any other location as required by the application or its packages.
     |
     */
+    'providers' => [
+        Barryvdh\DomPDF\ServiceProvider::class,
+    ],
+
+    'aliases' => [
+        'PDF' => Barryvdh\DomPDF\Facade::class,
+    ],
 
     'name' => env('APP_NAME', 'Laravel'),
 
